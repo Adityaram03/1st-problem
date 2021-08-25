@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	 int arr1[]={4,9,11,18,26,31};
+	 int arr2[]={5,8,12,18,39};
+	 int result[]=new int[11];
+	 int n1=6,n2=5,i=0,j=0,k=0;
+	 while(i<n1&&j<n2)
+	 if(arr1[i]<=arr2[j])
+	 {
+	 result[k]=arr1[i]; i++; k++;}
+	 else
+	 {
+	 result[k]=arr2[j]; j++; k++;}
+	 if(i==n1)
+	 while(j<n2)
+	 {
+	 	result[k]=arr2[j]; j++; k++;
+	 }
+	 else
+	 {
+	 	result[k]=arr1[i]; i++; k++;
+	 }
+	 
+	
+}
